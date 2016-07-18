@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name githubuserApp.controller:MainCtrl
+ * @name githubuserApp.controller:UserCtrl
  * @description
- * # MainCtrl
+ * # UserCtrl
  * Controller of the githubuserApp
  */
 angular.module('githubuserApp')

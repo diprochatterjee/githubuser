@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc service
- * @name githubuserApp.githubAPIInvoker
+ * @name githubuserApp.GithubInvoker
  * @description
- * # githubAPIInvoker
+ * # GithubInvoker
  * Service in the githubuserApp.
  */
 angular.module('githubuserApp')

@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc service
- * @name githubuserApp.repositories
+ * @name githubuserApp.Repositories
  * @description
- * # repositories
+ * # Repositories
  * Factory in the githubuserApp.
  */
 angular.module('githubuserApp')

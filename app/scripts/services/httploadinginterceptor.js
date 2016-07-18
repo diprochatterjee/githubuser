@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc factory
- * @name githubuserApp.httploadinginterceptor
+ * @name githubuserApp.loadingInterceptor
  * @description
- * # httploadinginterceptor
+ * # loadingInterceptor
  * Factory in the githubuserApp.
  */
 angular.module('githubuserApp')
