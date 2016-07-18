@@ -3,16 +3,19 @@
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
 
-If you don't have nodeJS installed, please install:
-1. nodeJS
+If you don't have nodeJS and ruby installed, please install:
+1. nodeJS can be installed at https://nodejs.org/en/download/
+2. Ruby can be installed at https://www.ruby-lang.org/en/documentation/installation/
 2. npm install -g npm
 3. npm install -g bower yo grunt-cli grunt karma
+
 
 This will allow you to do the next steps and play with the project.
 
 Please pull from this repository and run :
 1. npm install
 2. bower install
+3. gem install compass
 
 This will download and install the project dependencies.
 This project uses lodash, ui.router and ui.bootstrap as third party plugins for routing, collection and pagination logic.
