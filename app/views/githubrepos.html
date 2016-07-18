@@ -1,0 +1,35 @@
+<div class="container-fluid">
+<div ng-hide="gitrepos.emptyList === false">
+	<p ng-bind="::gitrepos.errorMessage"></p>
+</div>
+<div class="row" ng-hide="gitrepos.emptyList === true">
+  <div class="col-md-3">
+  	<img ng-src="{{gitrepos.owner.avatarSrc}}" alt="RepoOwner" class="img-responsive img-circle"></img><br><br>
+	<a ng-href="{{gitrepos.owner.url}}" ng-bind="::gitrepos.owner.name" target="_blank" class="text-center"></a><br><br>
+	<button class="btn btn-primary btn-sm" ng-click="gitrepos.goHome()">Check other users!</button>
+  </div>
+  <div class="col-md-9"  >
+  	<table class="table table-striped">
+  		<thead>
+	  		<tr>
+	  			<th>Link to repo</th> 
+	  			<th>Description of Repo</th>
+	  		</tr>
+  		</thead>
+  		<tbody>
+  			<tr ng-repeat="repo in gitrepos.currentPageRepoList" track by $index>
+  				<td><a ng-href="{{repo.url}}" ng-bind="repo.name" target="_blank"></a></td>
+  				<td><p ng-bind="repo.description"></p></td>
+  			</tr>
+  		</tbody>
+  	</table>
+  	Number of repos per page : 
+  			<button class="btn btn-info btn-sm" ng-click="gitrepos.changeReposPerPage(5)">5</button>
+  			<button class="btn btn-info btn-sm" ng-click="gitrepos.changeReposPerPage(10)">10</button>
+  			<uib-pagination total-items="gitrepos.list.length" ng-model="gitrepos.currentPage" 
+  			ng-change="gitrepos.changePage()" boundary-links="true" max-size="10" items-per-page="gitrepos.reposPerPage">
+  			</uib-pagination>
+	
+  </div>
+</div>
+</div>

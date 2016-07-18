@@ -1,0 +1,18 @@
+<div class="container-fluid lead">
+  <h3>Check out cool Github Repositories</h3><br><br>
+
+<div ng-if="user.error">
+  <p ng-bind="user.errorMessage"></p>
+</div>
+<form name="githubForm" ng-submit="githubForm.$valid && user.enter()">
+  
+  
+    GitHub username:
+   <input type="text" ng-model="user.input" placeholder="user name" ng-click="user.reset()" ng-keypress="user.reset()" required>
+   <button class="btn btn-primary btn-sm" ng-disabled="githubForm.$invalid">Go!
+   		
+   </button>
+ 
+ 
+</form>
+</div>
